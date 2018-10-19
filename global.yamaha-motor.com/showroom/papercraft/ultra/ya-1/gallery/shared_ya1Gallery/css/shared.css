@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/* -------------------------------------------------
+  印刷用
+------------------------------------------------- */
+
+@media print {
+  .ya1-nav {
+    display: none !important;
+  }
+}
+
+/* -------------------------------------------------
+  ベース
+------------------------------------------------- */
+
+/*カードの下余白*/
+#rwd-content .rwd-grid-lineuplist01 a.rwd-grid-item {
+    margin-bottom: 30px!important;
+}
+
+
+/*枠囲み見出し*/
+.rwd-section-group-headline.rwd-border-square, .rwd-section-headline.rwd-border-square {
+    background: #e0e0e0;
+}
+
+@media print, screen and (min-width: 768px){
+  #rwd-content #rwd-main-content {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px){
+  #rwd-content .rwd-product-header {
+    margin-bottom: 0;
+  }
+  #rwd-content .rwd-main-content {
+    margin-bottom: 0;
+  }
+  
+  #rwd-content .rwd-product-header .rwd-headline1-type02 {
+    padding-right: 0;
+  }
+}
+
+/* -------------------------------------------------
+  ya1-nav
+------------------------------------------------- */
+
+.ya1-nav {
+  background-color: #4a4949;
+}
+
+@media print, screen and (min-width: 768px){
+  .ya1-nav::after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+  }
+  .ya1-nav .logo {
+    width: 19.3%;
+    height: 50px;
+    padding-top: 10px;
+    line-height: 1;
+    text-align: right;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #4a2425;
+  }
+  .ya1-nav .logo::before {
+    width: 28px;
+    height: 23px;
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2px;
+    right: 12px;
+    opacity: 0.8;
+  }
+  .ya1-nav .logo img {
+    height: 30px;
+    margin-right: 11%;
+    vertical-align: middle;
+  }
+  .ya1-nav .sub-nav-wrapper {
+    float: right;
+    margin-right: 7%;
+    padding-left: 50px;
+    overflow: hidden;
+  }
+  .ya1-nav a.sub-nav {
+    height: 50px;
+    padding: 12px 40px 0;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .ya1-nav a.sub-nav.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    display: block;
+    background-color: #faf0e5;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-20deg);
+  }
+  
+  .ya1-nav a.sub-nav:last-child.current::before {
+    width: 9px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 7;
+    background-color: #4a4949;
+  }
+  .ya1-nav a.sub-nav span {
+    line-height: 1;
+    color: #fff !important;
+    font-size: 2.8rem;
+    font-family: Serif, Georgia, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .ya1-nav a.sub-nav:hover span {
+    color: #adefdf !important;
+  }
+  .ya1-nav a.sub-nav.current span {
+    color: #000 !important;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .page-detail .ya1-nav:last-of-type {
+    border-bottom: solid 2px #666;
+  }
+  
+  .page-story .ya1-nav:first-of-type {
+    border-bottom: solid 2px #fff;
+  }
+  .page-story .ya1-nav:last-of-type {
+    border-bottom: solid 1px #fff;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .ya1-nav {
+    width: 100%;
+    height: 50px;
+    display: table;
+    table-layout: fixed;
+    border-bottom: solid 1px #fff;
+  }
+  .ya1-nav .logo {
+    width: 40.1%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #4a2425;
+  }
+  .ya1-nav .logo::before {
+    width: 21px;
+    height: 16px;
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 2px;
+    margin: 0 3px 0 5px;
+    opacity: 0.8;
+  }
+  .ya1-nav .logo img {
+    width: 90px;
+  }
+  .ya1-nav .sub-nav-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+  }
+  .ya1-nav a.sub-nav {
+    height: 100%;
+    padding-top: 19px;
+    color: #fff;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+  }
+  .ya1-nav a.sub-nav.current::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: #f6d9b8;
+    width: 100%;
+    height: 5px;
+  }
+  .ya1-nav a.sub-nav:last-child.current::before {
+    width: 5em;
+    margin-left: 10px;
+  }
+  .ya1-nav .sub-nav span {
+    color: #fff;
+    line-height: 1;
+    display: inline-block;
+  }
+  .ya1-nav .sub-nav.current span {
+    color: #f6d9b8;
+  }
+  .ya1-nav .sub-nav:last-child span {
+    margin: 0 10px 0 10px;
+  }
+}
+
+/* -------------------------------------------------
+  #bottom-nav
+------------------------------------------------- */
+
+#bottom-nav .logo-wrapper {
+  padding: 54px 0 50px;
+  text-align: center;
+}
+#bottom-nav .logo img {
+  width: 182px;
+}
+
+@media screen and (max-width: 767px){
+  #bottom-nav .logo-wrapper {
+    padding: 24px 0;
+  }
+  #bottom-nav .logo img {
+    width: 120px;
+  }
+}
+/* -------------------------------------------------
+  画像のPC/SP 自動変換用
+------------------------------------------------- */
+
+.img-exchange {
+  visibility: hidden;
+}

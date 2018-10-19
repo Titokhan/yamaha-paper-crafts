@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/*カテゴリー帯*/
+#rwd-content .rwd-main-content-group.wide .cate_bar {
+    background: #777777;
+    border-bottom: solid 1px #fff;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar p{
+    float: left;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 12px 0 9px 2.34375%;
+    white-space: nowrap;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar .btn_updir{
+    float: right;
+}
+
+.note{
+  font-size: 1.4rem;
+  line-height: 1.5!important;
+}
+
+/*見出し下罫線*/
+.faq_hd {
+    border-bottom: 5px solid #aec4de;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+}
+/* 枠囲み見出し内の左余白調整 */
+.rwd-section-group-headline.rwd-border-square, 
+.rwd-section-headline.rwd-border-square {
+    padding: 15px 25px 15px 20px!important;
+}
+/*リンク*/
+.faq_link{
+	position: relative;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+.faq_link a{
+	padding: 0 15px 0 17px;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none!important;
+}
+.faq_link::after{
+	position: absolute;
+    content: "";
+    margin: auto;
+    display: block;
+    left: 1px;
+    width: 7px;
+    height: 11px;
+    background-size: 7px 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../../shared/img/rwd_icon_arrow_right02.svg);
+}
+.faq_cap{
+	margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+/*リンク部の下線なし*/
+#rwd-content .rwd-main-content dl a:link, 
+#rwd-content .rwd-main-content p a:link {
+    text-decoration: none!important;
+}
+
+/*AdobeReader*/
+.icon_adobereder img{
+    display: inline;
+    width: 158px!important;
+    height: 39px!important;;
+    margin: 20px 12px 7px 0;
+}
+
+/*番号付きリスト*/
+.rwd-faq ol{
+    margin-top: 20px;
+    padding-left: 1.5em;
+}
+.rwd-faq ol li{
+    margin-bottom: .8em;
+}
+.rwd-faq ol li:last-child{
+    margin-bottom: 0;
+}
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+
+/*見出し*/
+.faq_hd span{
+	font-size: 2.2rem!important;
+}
+/*リンク*/
+.faq_link a{
+    font-size: 1.8rem;
+}
+.faq_link::after{
+    top: 9px;
+}
+.faq_cap{
+	font-size: 1.5rem!important;
+}
+
+/*ページ下リンク部-上罫線一調整*/
+#rwd-content .rwd-pagenav-footer ul {
+  margin-top: 15px;
+  padding-top: 15px;
+}
+/*ページ下リンク部-タイトル部*/
+#rwd-content .rwd-global-pagenav-bottomtitle{
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 0;
+}
+/*ページ下リンク部-余白調整*/
+#rwd-content .rwd-pagenav-footer a {
+    padding: 10px 8px!important;
+}
+/*ページ下リンク部-hover*/
+#rwd-content .rwd-pagenav-footer a:hover {
+    color: #0695d1;
+    text-decoration: underline;
+}
+
+/*Q&A - Qリスト*/
+.block-q ul{
+padding-left: 10px;
+}
+
+.block-q ul li{
+list-style: none;
+background: url(../../../../jp/faq/img/icon_q_s.svg) no-repeat left 8px;
+padding: 4px 0 3px 23px;
+margin-bottom: .6em;
+line-height: 1.5;
+}
+
+.block-q ul li .number{
+	font-size: 1.8rem;
+	font-family: 'Roboto';
+	margin-right: 5px;
+	color: #5476ba;
+}
+/*Q&Aのリンク部分の上余白*/
+.rwd-faq .rwd-link-list01{
+    margin-top: 15px;
+    padding-left: 5px;
+}
+#rwd-content .rwd-link-list01 li {
+     margin-bottom: 0!important; 
+}
+#rwd-content .rwd-faq .rwd-faq-answer {
+    margin-bottom: 60px!important;
+}
+
+
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*見出し*/
+.faq_hd{
+	margin-bottom: 15px!important;
+}
+.faq_hd span{
+	font-size: 1.8rem!important;
+	line-height: 1.3;
+}
+/* SP時枠囲み見出しの文字サイズを少し大きく */
+.rwd-section-group-headline.rwd-small span:first-child, 
+.rwd-section-headline.rwd-small span:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+/*リンク*/
+.faq_link a{
+    font-size: 1.5rem;
+}
+.faq_link::after{
+    top: 5px;
+}
+.faq_cap{
+	font-size: 1.4rem!important;
+}
+/*Q&A - Qリスト*/
+.block-q ul{
+padding-left: 0;
+}
+
+.block-q ul li{
+list-style: none;
+background: url(../../../../jp/faq/img/icon_q_s.svg) no-repeat left 8px;
+padding: 4px 0 3px 23px;
+margin-bottom: .6em;
+line-height: 1.6;
+}
+
+.block-q ul li .number{
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    margin-right: 5px;
+    color: #5476ba;
+}
+/*Q&AのQブロック：質問文を独立*/
+.block-q .qtxt{
+    display: block;
+}
+
+/*Q&Aのリンク部分の上余白*/
+.rwd-faq .rwd-link-list01{
+    margin-top: 15px;
+    margin-left:-5px;
+}
+#rwd-content .rwd-link-list01 li {
+     margin-bottom: 0!important; 
+}
+#rwd-content .rwd-faq .rwd-faq-answer {
+    margin-bottom: 30px!important;
+}
+/*Q&Aのリンク部分複数行になった時の行間*/
+#rwd-content .rwd-link-list01 li {
+    line-height: 1.5;
+}
+/*Q&Aのリンク部分先頭＞位置調整*/
+#rwd-content .rwd-link-list01 li::after {
+    top: 4px!important;
+}
+
+/*AdobeReader*/
+.icon_adobereder span{
+    display: block;
+}
+/*ページ下リンク部-上の余白*/
+#rwd-content .rwd-pagenav-footer ul {
+  margin-top: 40px;
+}
+/*ページ下リンク部のhover*/
+#rwd-content .rwd-pagenav-footer a:hover {
+    background: #c3e6f4;
+}
+}

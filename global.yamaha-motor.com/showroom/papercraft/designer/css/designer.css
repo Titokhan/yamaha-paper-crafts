@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*カテゴリー帯*/
+#rwd-content .rwd-main-content-group.wide .cate_bar {
+    background: #777777;
+    border-bottom: solid 1px #fff;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar p{
+	float: left;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1;
+	padding: 12px 0 9px 2.34375%;
+    white-space: nowrap;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar .btn_updir{
+	float: right;
+}
+
+
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*名前部分*/
+h2 .titleline{
+display: block;
+margin-bottom: .5em;
+}
+h2 .engname{
+display: block;
+font-style: italic;
+margin-top: .6em;
+font-family: 'Roboto';
+}
+
+/*テキストエリアの左側を少し広げる*/
+.block-left-pd{
+padding-left: 2%;
+}
+
+/*プロフエリア*/
+.prof{
+	margin-bottom: 50px;
+}
+/*メッセージの冒頭見出し*/
+p.section-hd{
+    font-size: 2.3rem;
+}
+/*メッセージ見出し*/
+h3 {
+    font-size: 2.0rem;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    font-weight: normal;
+    border-left: solid 10px #a19082;
+    padding-left: 13px;
+    margin-top: 2em;
+}
+h3.first-h3{
+    margin-top: 1em;
+}
+/*メッセージ部段落下余白*/
+.messe p{
+	margin-bottom: 1.2em;
+}
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*名前部分*/
+h2{
+	font-size: 2.0rem;
+}
+h2 .titleline{
+display: block;
+margin-bottom: .5em;
+}
+h2 .engname{
+display: block;
+font-style: italic;
+margin-top: .6em;
+font-family: 'Roboto';
+}
+
+/*プロフエリア*/
+.prof{
+	margin-bottom: 50px;
+}
+/*メッセージ見出し*/
+h3 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    font-weight: normal;
+    border-left: solid 10px #a19082;
+    padding-left: 13px;
+    margin-top: 2em;
+}
+h3.first-h3{
+    margin-top: 1em;
+}
+/*メッセージ部段落下余白*/
+.messe p{
+	margin-bottom: 1.2em;
+}
+}
+
+

@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+/* TYPOGRAPHY
+================================================== */
+
+body {
+	color:#000;
+	background: #fff;
+}
+
+/*** parallax sections ***/
+
+#paralaxSlice1, #paralaxSlice2, #paralaxSlice3, #paralaxSlice4 {
+	background-color:#4FAFC2;
+}
+#arizHome {
+	background-color:#141e67;
+}
+#paralaxSlice1 {
+	background-image: url('../img/detl_main_001.jpg');
+}
+#paralaxSlice2 {
+	background-image: url('../img/down_main_001.jpg');
+}
+.paralaxText blockquote, .paralaxText h1, .paralaxText h2, .paralaxText h3, .paralaxText p, .paralaxText i{
+	color:#fff;
+}
+
+div#_atssh {
+	position: absolute;
+	overflow: hidden;
+}
+
+/* END TYPOGRAPHY
+
+================================================== */
+
+/* LINKS AND BUTTONS
+================================================== */
+
+a {
+	color:#ff0;
+}
+a:hover, .scrollspyNav .active a {
+	color:#fff;
+}
+
+/*** buttons ***/
+.btn {
+	background:#4FAFC2;
+	color:#fff;
+	border:2px solid #fff;
+}
+.btn:hover {
+	color:#4FAFC2;
+	border-color:#eee;
+	text-shadow:none;
+	background:#fff
+}
+.btn-primary {
+	background: #006dcc;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+	background: #555;
+}
+
+/* END LINKS AND BUTTONS
+================================================== */
+
+/* MAIN MENU 
+================================================== */
+
+#mainHeader{
+    background-color: white;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeader .navbar-inner {
+	background: #444;
+	filter:none !important;
+}
+#mainMenu ul li a, #resMainMenu ul li a {
+	color:#444;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background: #141e67;
+	color:#fff;
+}
+
+/* END MAIN MENU 
+================================================== */
+
+/* FOOTER 
+================================================== */
+
+footer {
+	color:#777;
+	background:#eee;
+	border-top:1px solid #555s;
+}
+
+/* END FOOTER 
+================================================== */
+
+/* HOME
+================================================== */
+
+/* END HOME
+================================================== */
+
+/* SLIDERS
+================================================== */
+
+/*** FLEX ***/
+
+/*** flexHome ***/
+
+/*** END FLEX SLIDER ***/
+
+/* END SLIDERS
+================================================== */
+
+/* PORTFOLIO
+================================================== */
+
+/* END PORTFOLIO
+================================================== */
+
+/* MISCELANIOUS
+================================================== */
+/*** hover images ***/
+.iconLinks a span {color:#fff;}
+
+/*** pricing table ***/
+
+/* END MISCELANIOUS
+================================================== */
+
+/* NEKO CSS FRAMEWORK
+================================================== */
+
+/*** Feature box **/
+
+/*** slices ***/
+
+/*** call to action ***/
+
+/*color1*/
+.color1, .slice.color1, .bulle.color1, .ctaBox.color1{
+	background-color:#F7F7F7;
+	color:#444;
+}
+.color1 h1, .color1 h2, .color1 h3, .color1 h4, .color1 blockquote, .color1 a{
+	color:#444;
+}
+
+/*color4*/
+
+/*** icons ***/
+
+/* END NEKO CSS FRAMEWORK
+================================================== */
+
+.modal {
+overflow-y: auto;
+}
+
+
+/* ==========================================
+   Fonts
+   ========================================== */
+ body {
+	font:14px/1.231 Verdana,sans-serif;
+	letter-spacing: 0; /* for IE */
+}
+
+p {
+	line-height: 1.6;
+}
+/*
+#YMHeaderArea {
+	max-height: 80px;
+	overflow: hidden;
+}*/
+#YMHeaderArea p.closing {
+	float: right;
+	width: auto;
+	height: auto;
+	padding-left: 12px;
+}
+#YMHeaderArea .closing a {
+	display: block;
+	padding: 25px 37px 8px 0;
+	background: url(../../shared/img/btn_close.gif) no-repeat 100% 0;
+	color: #000;
+	font-size: 13px;
+}
+#YMHeaderArea .closing a:hover,
+#YMHeaderArea .closing a:active {
+	color: #f00;
+}
+#YMSnsArea {
+	float: right;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+#YMSnsArea .addthis_toolbox {
+float: right;
+}
+#YMSnsArea .addthis_toolbox a {
+margin-left: 15px;
+float: none;
+}
+#YMFooterArea {
+	background: none;
+}
+#YMFooterArea a {
+	color: #2256ff;
+}
+#YMFooterArea .information .copyright {
+clear: both;
+margin: 0 auto;
+padding: 19px 29px 16px;
+background: #E5E6E7;
+}
+#YMFooterArea #YMSiteNavigationArea {
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+	background: none;
+}
+#YMFooterArea .jumpPagetop p {
+	float: right;
+	margin: 7px 0 0;
+}
+#YMFooterArea .information .copyright {
+	border-top: 12px solid #f1f1f2;
+}
+
+
+@media (min-width: 481px) {
+	#globalWrapper {
+		min-width: 976px;
+	}
+}
+@media (max-width: 768px) {
+	.closing {
+		display: none;
+	}
+}
+@media (max-width: 950px) {
+	#YMHeaderArea {
+		width: 100%;
+	}
+}
+
+
+#arizHome {
+	position: relative;
+	padding-bottom: 6px;
+	min-width: 950px;
+}
+#arizHome img.logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -475px;
+	z-index: 5;
+}
+#arizHome h1 {
+	margin: 0 0 19px;
+}
+#arizHome img {
+	display: block;
+	margin: 0 auto;
+}
+#arizHome h1 img {
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 1400px) {
+#arizHome h1 img {
+	width: 1400px;
+}
+}
+@media (max-width: 480px) {
+#arizHome {
+	min-width: 0;
+	overflow: hidden;
+}
+#arizHome h1 {
+	margin-right: -10%;
+	margin-left: -30%;
+}
+}
+#concept {
+	padding-bottom: 80px;
+	color: #fff;
+	background-color: #2c50a1;
+}
+#detail {
+	padding-bottom: 80px;
+	background-color: #e2e2e2;
+}
+#download {
+	color: #fff;
+	background: #5883da url(../img/bg_001.gif) 0 0;
+}
+#arizLink {
+	background-color: #686868;
+}
+
+
+#concept h1 {
+	margin: 60px auto;
+}
+#concept {
+	font-size: 15px;
+}
+#concept p {
+	margin-bottom: 1.5em; 
+}
+#concept dt {
+	margin: 20px 0 10px;
+}
+#concept dd p {
+	margin-bottom: 50px;
+	font-size: 14px;
+}
+#concept a {
+	display: inline-block;
+	display: block\9;
+	zoom: 1\9;
+	border: 3px solid #fff;
+	background-color: #000;
+}
+#concept a:hover img {
+	display: inline-block;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+}
+#detail .size {
+	position: relative;
+}
+#detail .size h3 {
+	position: absolute;
+	top: 63px;
+	z-index: 5;
+}
+#detail .size p {
+	position: relative;
+	z-index: 0;
+	margin: 0;
+}
+#detail .photo {
+	margin: 90px 0 23px;
+}
+#detail .photo p {
+	line-height: 0;
+	margin-bottom: 26px;
+}
+@media (max-width: 480px) {
+#detail .size h3 {
+	top: 12px;
+}
+#detail .imgWrapper {
+width: 100%;
+}
+#detail .imgWrapper img {
+width: 100%;
+}
+}
+#detail .imgWrapper {
+	display: inline-block;
+	display: block\9;
+	zoom: 1\9;
+	padding: 3px;
+	background-color: #fff;
+	border: 1px solid #b4b3b3;
+	text-align: center;
+}
+#detail .imgWrapper a {
+    position: relative;
+	display: block;
+	background-color: #000;
+}
+#detail .imgWrapper a:hover img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+#detail .imgWrapper a:hover:after {
+    content: " ";
+    text-align: center;
+    line-height: 43px;
+    color: #fff;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -21px 0 0 -21px;
+    background: url(../img/ar_002.png) 0 0 no-repeat;
+ 
+    display: block;
+    height: 65px;
+    width: 65px;
+}
+#detail .floatright {
+	float: right;
+}
+
+#download h2 {
+	margin: 45px auto 24px;
+	text-align: center;
+}
+#download h2 + p {
+	margin-bottom: 36px;
+}
+#download h3,
+#download p {
+	text-align: center;
+}
+#download dd {
+	padding-bottom: 12px;
+	text-align: center;
+}
+#download .notice {
+	margin-top: 53px;
+	padding: 20px 20px 0;
+	border: 1px solid #fff;
+	background-color: #4468b4;
+}
+#download .notice dl {
+	margin: 0;
+}
+#download .notice dt {
+	margin-bottom: 16px;
+	color: #fee225;
+	text-align: center;
+	font-weight: normal;
+}
+#download .notice dd p {
+	text-align: left;
+}
+#download .notice dd a:link,
+#download .notice dd a:visited {
+	color: #a7fbfc;
+	text-decoration: none;
+}
+#download .notice dd a:hover,
+#download .notice dd a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+#download .parts dd {
+background: -moz-linear-gradient(top,  #7195dc 0%, #7196dd 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7195dc), color-stop(100%,#7196dd));
+background: -webkit-linear-gradient(top,  #7195dc 0%,#7196dd 100%);
+background: -o-linear-gradient(top,  #7195dc 0%,#7196dd 100%);
+background: -ms-linear-gradient(top,  #7195dc 0%,#7196dd 100%);
+background: linear-gradient(to bottom,  #7195dc 0%,#7196dd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7195dc', endColorstr='#7196dd',GradientType=0 );
+}
+#download .parts a {
+	display: block;
+	margin: 0 auto;
+	width: 299px;
+	height: 65px;
+	background: url(../img/btn_bg_001.png) 0 0;
+}
+#download .assembly .col-sm-8 a {
+	display: block;
+	margin: 0 auto;
+	width: 299px;
+	height: 65px;
+	background: url(../img/btn_bg_002.png) 0 0;
+}
+#download .parts a:hover,
+#download .assembly .col-sm-8 a:hover {
+	background-position: 0 -100%;
+}
+#download .assembly dt {
+	margin-bottom: 15px;
+}
+#download .supplement {
+	margin: 20px 0 55px;
+	padding-top: 20px;
+	background-color: #4468b4;
+}
+#download .supplement > p {
+	margin: 16px 10px;
+}
+#download .supplement .update {
+	margin: 0 10px;
+}
+#download .supplement ul {
+	margin: 0;
+	padding: 12px 16px;
+	background-color: #2b4c91;
+	list-style: none;
+}
+#download .supplement ul li {
+	margin: 0;
+	padding: 3px 0;
+	background-color: #2b4c91;
+}
+#download .supplement ul li p {
+	margin: 0;
+}
+#download .supplement .icon {
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 15px;
+}
+#download .supplement ul a:link,
+#download .supplement ul a:visited {
+	color: #a7fbfc;
+	text-decoration: none;
+}
+#download .supplement ul a .size,
+#download .supplement ul a:hover .size,
+#download .supplement ul a:active .size {
+	color: #fff;
+}
+#download .supplement ul a:hover,
+#download .supplement ul a:active {
+	color: #fff;
+	text-decoration: none;
+}
+#download .supplement ul .title {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	background: url(../img/icon_download.gif) 0 5px no-repeat;
+	font-size: 15px;
+}
+#download .supplement ul a:hover .title,
+#download .supplement ul a:active .title {
+	text-decoration: underline;
+}
+#download .aboutDownload {
+	margin: 0 0 64px;
+	padding: 16px 20px 1px 20px;
+	border: 1px solid #fff;
+}
+#download .downloadButton {
+	margin: 0;
+	padding-bottom: 10px;
+	background: url(../img/btn_bg_003.png) 50% 65px no-repeat;
+}
+
+#arizLink dl {
+	margin-bottom: 45px;
+}
+#arizLink dt {
+	margin: 37px 0 14px;
+}
+#arizLink dd img:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+}
+
+/*================================================== */
+#arizGoback {
+	background-color: #141e67;
+}
+#arizGoback .goback a {
+	float: right;
+	min-width: 425px\9;
+}
+#ariz0002main .img-responsive {
+	display: block;
+	width: 100%;
+}
+#arizTitle {
+	background-color: #e2e2e2;
+}
+#arizTitle h1,
+#arizTitle p {
+	margin: 0;
+}
+#arizTitle {
+}
+#ariz0002main {
+	background-color: #e2e2e2;
+}
+#ariz0002main .row {
+	margin-top: 47px;
+}
+
+#ariz0002main p strong {
+	font-size: 23px;
+	font-weight: normal;
+}
+#ariz0002main p {
+	margin: 0;
+	font-size: 15px;
+}
+#ariz0002main p + p {
+	margin-top: 18px;
+}
+#ariz0002main p span.name {
+	font-weight: bold;
+}
+
+#ariz0002main dl.name {
+	position: relative;
+	margin: 0 0 17px;
+	min-height: 90px;
+}
+#ariz0002main dl.name dt {
+	padding-top: 1.5em;
+	padding-left: 102px;
+}
+#ariz0002main dl.name dd {
+	padding-left: 102px;
+	font-size: 16px;
+}
+#ariz0002main dl.name dd.icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 0;
+}
+#ariz0002main dl.name + p {
+	margin-top: 30px;
+}
+@media (max-width: 480px) {
+	.row {
+		margin: 0;
+	}
+	#ariz0002main .row {
+		margin: 12px 0;
+	}
+	nav .row {
+		margin: 0 -13px;
+	}
+	#ariz0002main .img-responsive {
+		margin: 12px 0;
+		width: 100%;
+	}
+	#download .supplement img {
+		max-width: 100%;
+		height: auto;
+	}
+}

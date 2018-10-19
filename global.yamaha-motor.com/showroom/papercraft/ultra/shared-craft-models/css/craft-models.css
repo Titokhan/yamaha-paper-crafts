@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+/* ===============================================
+  
+  ペーパークラフト MT-01, VMAX
+  ページで使用の共通スタイル。
+  
+=============================================== */
+
+/* revise default style */
+
+@media print, screen and (max-width: 767px){
+  #rwd-content .rwd-product-header {
+    margin-bottom: 0;
+  }
+  #rwd-content .rwd-product-header .rwd-headline1-type02 {
+    padding-right: 0;
+  }
+}
+
+/* headline */
+
+.h3-style {
+  color: #172773;
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1 !important;
+}
+.h4-style {
+  color: #172773;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3 !important;
+}
+.h4-style .small {
+  font-size: 2.0rem;
+}
+@media print, screen and (max-width: 767px){
+  .h3-style {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .h4-style {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  .h4-style.sp-left {
+    text-align: left;
+  }
+  .h4-style .small {
+    font-size: 1.6rem;
+  }
+}
+
+/* icon ( btn ) */
+
+#rwd-content .rwd-button-default.rwd-button02.icon-download::after {
+  background-image: url(../img/icon_download_wt.svg);
+}
+#rwd-content .rwd-button-default.rwd-button02.icon-doc::after {
+  background-image: url(../img/icon_book.svg);
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  top: 36px;
+  left: 0;
+  right: 0;
+}
+@media print, screen and (min-width: 768px){
+  #rwd-content .rwd-button-default.rwd-button02.icon-download::after {
+    top: 30px!important;
+  }
+}
+@media print, screen and (max-width: 767px){
+  #rwd-content .rwd-button-default.rwd-button02.icon-doc::after {
+    left: auto;
+    top: 25px;
+    right: 23px;
+  }
+}
+
+/* link */
+
+.link-style1 {
+  padding-left: 17px;
+  text-decoration: none !important;
+  position: relative;
+}
+.link-style1::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 6px;
+  margin: auto;
+  width: 7px;
+  height: 11px;
+  background-size: 7px 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../../../../shared/img/rwd_icon_arrow_right02.svg);
+}
+
+/* --------------------------------------------
+main-pic-area
+-------------------------------------------- */
+
+#main-pic-area {
+  max-width: 1280px;
+  margin: 0 auto 56px;
+}
+#main-pic-area h2 {
+  padding: 0 0 0 29px;
+  margin-bottom: 1px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #000;
+  line-height: 1 !important;
+}
+#main-pic-area h2::after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+#main-pic-area h2 span {
+  padding-top: 11px;
+  font-size: 1.9rem;
+  display: inline-block;
+}
+#main-pic-area h2 a {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  background-color: #fff;
+}
+#main-pic-area h2 a:hover img {
+  opacity: 0.8;
+}
+#main-pic-area .main-pic {
+  width: 100%;
+}
+
+@media print, screen and (max-width: 767px){
+  #main-pic-area {
+    margin: 0 auto 48px;
+  }
+  #main-pic-area h2 {
+    padding-left: 10px;
+  }
+  #main-pic-area h2 span {
+    padding-bottom: 9px;
+    font-size: 1.8rem;
+  }
+}
+
+/* --------------------------------------------
+complete-area
+-------------------------------------------- */
+
+#complete-area {
+  margin-bottom: 80px;
+}
+
+#complete-area .more a {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+#complete-area .more a img {
+  margin-left: 15px;
+  vertical-align: -8px;
+}
+
+@media print, screen and (min-width: 768px){
+  #rwd-content #complete-area .rwd-modalitem01 {
+    margin-bottom: 34px;
+  }
+}
+@media print, screen and (max-width: 767px){
+  #complete-area {
+    margin-bottom: 65px;
+  }
+}
+
+/* --------------------------------------------
+bg-area
+-------------------------------------------- */
+
+.bg-area {
+  margin-bottom: 95px;
+  height: 300px;
+  background-size: cover;
+}
+.page-mt01 .bg-area {
+  background: url(../../mt-01/img/bg_001.jpg) no-repeat center top fixed;
+}
+.page-vmax .bg-area {
+  background: url(../../vmax/img/bg_001.jpg) no-repeat center top fixed;
+}
+
+@media print, screen and (max-width: 767px){
+  .bg-area {
+    height: 178px;
+    margin-bottom: 64px;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-size: 140% auto !important;
+  }
+}
+
+/* --------------------------------------------
+dl-nav-area
+-------------------------------------------- */
+
+#dl-nav-area {
+  margin-bottom: 120px;
+}
+#dl-nav-area a {
+  width: 15%;
+  margin: 0 0.75%;
+  display: inline-block;
+  position: relative;
+}
+#dl-nav-area a::after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  display: block;
+  background: url(../img/arrow_002.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 15;
+  right: 8px;
+  bottom: 8px;
+}
+#dl-nav-area a img {
+  position: relative;
+  z-index: 10;
+}
+#dl-nav-area p {
+  font-size: 1.9rem;
+}
+
+@media print, screen and (max-width: 767px){
+  #dl-nav-area {
+    margin-bottom: 50px;
+  }
+  #dl-nav-area a {
+    width: 30.65%;
+    margin: 0 0 12px;
+  }
+  #dl-nav-area a:nth-child(2) {
+    margin: 0 2.2%;
+  }
+  #dl-nav-area a:last-child {
+    margin-left: 2.2%;
+  }
+  #dl-nav-area a::after {
+    width: 12px;
+    height: 12px;
+    right: 4px;
+    bottom: 4px;
+  }
+  #dl-nav-area p {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+
+/* --------------------------------------------
+vol-box
+-------------------------------------------- */
+
+.vol-box {
+  padding-bottom: 50px;
+  border-bottom: solid 2px #d5d5d5;
+}
+.vol-box + .vol-box {
+  margin-top: 66px;
+}
+#rwd-content .vol-box .rwd-button-default {
+  margin-bottom: 10px;
+}
+#rwd-content .vol-box .rwd-grid-item p {
+  font-size: 1.5rem;
+}
+
+#rwd-content .vol-box .rwd-button-default.dl-btn1 {
+  background-color: #3b80c0;
+}
+#rwd-content .vol-box .rwd-button-default.dl-btn2 {
+  background-color: #686868;
+}
+#rwd-content .vol-box .rwd-button-default.dl-btn3 {
+  background-color: #437579;
+}
+#rwd-content .vol-box .rwd-button-default.dl-btn1:hover,
+#rwd-content .vol-box .rwd-button-default.dl-btn2:hover,
+#rwd-content .vol-box .rwd-button-default.dl-btn3:hover {
+  background-color: #e28c2a;
+}
+#rwd-content .page-mt10 .vol-box .rwd-button-default.dl-btn1:hover,
+#rwd-content .page-mt10 .vol-box .rwd-button-default.dl-btn2:hover,
+#rwd-content .page-mt10 .vol-box .rwd-button-default.dl-btn3:hover {
+  background-color: #91e732;
+}
+
+.vol-box .vol {
+  font-size: 2.8rem;
+}
+
+@media print, screen and (max-width: 767px){
+  .vol-box {
+    padding-bottom: 40px;
+  }
+  .vol-box + .vol-box {
+    margin-top: 49px;
+  }
+  #rwd-content .vol-box .rwd-button-default {
+    margin-bottom: 3px;
+    padding-left: 7% !important;
+  }
+  #rwd-content .vol-box .rwd-grid-item + .rwd-grid-item {
+    margin-top: 30px;
+  }
+  
+  .vol-box .vol {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 1.9rem;
+  }
+}
+
+/* --------------------------------------------
+swiper
+-------------------------------------------- */
+
+#rwd-content .swiper-container {
+  padding-bottom: 15px;
+}
+.swiper-button-prev {
+  left: -25px;
+}
+.swiper-button-next {
+  right: -25px;
+}
+
+@media print, screen and (min-width: 768px){
+  .slider-large-wrapper {
+    width: 83.3%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media print, screen and (max-width: 767px){
+  .slider-large-wrapper {
+    padding-top: 40px;
+  }
+  #rwd-content .swiper-container {
+    padding-bottom: 30px;
+  }
+  #rwd-content .vol-box .slider-large-wrapper .rwd-grid-item + .rwd-grid-item {
+    margin-top: 0;
+  }
+}
+
+/* --------------------------------------------
+update-area
+-------------------------------------------- */
+
+#update-area h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+#update-area p,
+#update-area dt,
+#update-area dd
+#update-area li {
+  line-height: 1.5em !important;
+}
+#update-area p.lead {
+  margin-bottom: 33px;
+}
+#update-area dl {
+  border-top: solid 1px #afafaf;
+}
+#update-area dt {
+  padding-top: 17px;
+  margin-bottom: 5px;
+  color: #13279b;
+}
+#update-area dd {
+  padding-bottom: 17px;
+  border-bottom: solid 1px #afafaf;
+}
+#update-area p + ul {
+  padding-top: 15px;
+}
+#update-area li {
+  margin-bottom: 0 !important;
+}
+
+@media print, screen and (max-width: 767px){
+  #update-area h3 {
+    line-height: 1.3em !important;
+    margin-bottom: 15px;
+  }
+}
+
+/* --------------------------------------------
+ページ下部
+-------------------------------------------- */
+
+.compBike-area {
+  padding-bottom: 29px;
+  margin-bottom: 50px;
+  background: url(../img/bg_002.jpg) repeat-x center bottom;
+}
+@media print, screen and (max-width: 767px){
+  .compBike-area {
+    margin-bottom: 20px;
+  }
+}
+
+/* 以下、旧コードを引き継いで微調整 */
+
+.tumblrLink {
+  max-width: 696px;
+  margin: 34px auto 42px;
+  font-size: 16px;
+  text-align: center;
+}
+.tumblrLink img {
+  display: block;
+  margin: 32px auto 14px;
+}
+
+.aboutDownload {
+  max-width: 654px;
+  margin: 32px auto 0;
+  padding: 16px 20px 10px;
+  border: 1px solid #bababa;
+}
+.aboutDownload h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.usePolicy {
+  max-width: 696px;
+  margin: 36px auto 56px;
+}
+.usePolicy h3,
+.usePolicy p {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.6;
+}
+.usePolicy strong {
+  font-weight: normal;
+}
+
+@media print, screen and (max-width: 767px){
+  .tumblrLink {
+    text-align: left;
+  }
+}

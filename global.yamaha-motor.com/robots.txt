@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /jp/profile/map/001/
+Disallow: /jp/profile/map/018/
+Sitemap: https://global.yamaha-motor.com/sitemap.xml

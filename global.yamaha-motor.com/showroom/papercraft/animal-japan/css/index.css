@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+/*カテゴリー帯*/
+#rwd-content .rwd-main-content-group.wide .cate_bar {
+    background: #896b52;
+    border-bottom: solid 1px #fff;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar p{
+    float: left;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 12px 0 9px 2.34375%;
+    white-space: nowrap;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar .btn_updir{
+	float: right;
+}
+
+
+/*カードの下余白*/
+#rwd-content .rwd-grid-lineuplist01 a.rwd-grid-item {
+    margin-bottom: 30px!important;
+}
+
+/*hover効果*/
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item img {
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*リードコピー*/
+p.rwd-text.rwd-large {
+    font-size: 2.0rem;
+}
+p.rwd-text.rwd-large .subtext{
+    font-size: 1.4rem;
+    padding-left: 1em;
+}
+
+/*カード文字部*/
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dt {
+    margin-bottom: 4px;
+    margin-top: 8px;
+    padding-bottom: 4px;
+    font-size: 1.8rem!important;
+}
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dd.rwd-lineup-description {
+    color: #714242;
+}
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dd.rwd-lineup-description {
+    border-top: 7px solid #e3dcd6;
+    border-bottom: none;
+    color: #666666;
+}
+}
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*リードコピー*/
+p.rwd-text.rwd-large {
+    font-size: 1.6rem!important;
+}
+p.rwd-text.rwd-large .subtext{
+    font-size: 1.4rem!important;
+    padding-left: 1em;
+}
+/*見出しのサブテキストをインラインに*/
+#rwd-content .rwd-headline2-type08 .rwd-headline2-text {
+    display: inline!important;
+}
+#rwd-content .rwd-headline2-type08 .rwd-headline2-subtext {
+    padding-left: 1em;
+    display: inline!important;
+}
+/*見出し下の余白詰める*/
+h2 {
+    margin: 0 0 20px!important;
+}
+/*カード文字部*/
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dd.rwd-lineup-description {
+    color: #714242;
+}
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dd.rwd-lineup-description {
+    border-top: 5px solid #e3dcd6;
+    border-bottom: none;
+    color: #666666;
+}
+/*カード上の余白詰める*/
+#rwd-content .rwd-grid-lineuplist01 a.rwd-grid-item {
+    padding-top: 10px!important;
+}
+/*カード下の余白詰める*/
+#rwd-content .rwd-grid-lineuplist01 a.rwd-grid-item {
+    margin-bottom: 10px!important;
+}
+
+}
+
+

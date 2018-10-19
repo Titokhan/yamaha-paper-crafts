@@ -1,0 +1,37 @@
+#rwd-content .rwd-nav-container,
+#rwd-content .rwd-wrap-breadcrumb,
+#rwd-content .rwd-wrap-sns-buttons,
+#rwd-content .rwd-main-header:after,
+#rwd-content .rwd-footer-inner {
+  display: none;
+}
+#rwd-content .rwd-scroll-button.show{
+  display: none;
+}
+#rwd-content .rwd-header-identify{
+  margin-bottom: 20px;
+}
+
+
+#rwd-content .rwd-main-content-group.full, #rwd-content .rwd-main-content-group.pc-full,#rwd-content .rwd-keyvisual-wrap,#rwd-main-content{
+  width: 100%;
+    max-width: auto;
+}
+
+#rwd-content .rwd-main-footer,
+#rwd-content .rwd-main-header,
+#rwd-content .rwd-main-content-group{
+  width: 100%;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rwd-content .rwd-footer-inner,
+#rwd-content .rwd-header-inner,
+#rwd-content .rwd-main-content-group-inner{
+  width: 95.31250%;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

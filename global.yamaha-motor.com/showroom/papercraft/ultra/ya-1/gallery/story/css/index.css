@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+#story .second-sec h3 {
+  line-height: 1.1;
+  display: table;
+}
+#story .second-sec h3 span {
+  height: 90px;
+  padding: 0 3% 0;
+  box-sizing: border-box;
+  border: solid 9px #000;
+  font-size: 2.0rem;
+  line-height: 1.1;
+  font-weight: normal;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 768px) and (max-width: 1180px){
+  #story .second-sec h3 span {
+    padding: 0 15px 0;
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #story .second-sec h3 {
+    text-align: center;
+    width: 100%;
+  }
+  #story .second-sec h3 span {
+    height: 45px;
+    padding: 0;
+    border-width: 4px;
+    font-size: 1.5rem;
+  }
+}
+
+/* -------------------------------------------------
+  story
+------------------------------------------------- */
+
+@media print, screen and (min-width: 768px){
+  #story .main-block {
+    position: relative;
+    z-index: 5;
+  }
+  #story h2 img {
+    width: 100%;
+  }
+  #story .second-sec {
+    width: 84.42%;
+    margin: 0 auto 0;
+    position: relative;
+    z-index: 10;
+  }
+  #story .second-sec::after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+  }
+  #story .second-sec h3,
+  #story .second-sec p,
+  #story .second-sec .image {
+    width: 48.03%;
+  }
+  #story .second-sec h3 {
+    margin-bottom: 0;
+  }
+  #story .second-sec p {
+    margin-top: 40px;
+    line-height: 1.7;
+  }
+  
+  /* ss1 */
+  
+  #story .second-sec.ss1 {
+    margin-top: -50px;
+  }
+  #story .second-sec.ss1 .image {
+    float: left;
+  }
+  #story .second-sec.ss1 h3,
+  #story .second-sec.ss1 p {
+    float: right;
+  }
+  
+  /* ss2 */
+  
+  #story .second-sec.ss2 {
+    margin-top: 90px;
+  }
+  #story .second-sec.ss2 .image {
+    float: right;
+    margin-top: 90px;
+  }
+  #story .second-sec.ss2 h3,
+  #story .second-sec.ss2 p {
+    float: left;
+  }
+  
+  /* ss3 */
+  
+  #story .second-sec.ss3 {
+    margin-top: 110px;
+  }
+  #story .second-sec.ss3 .image {
+    float: right;
+    margin-top: 90px;
+  }
+  #story .second-sec.ss3 h3,
+  #story .second-sec.ss3 p {
+    float: left;
+  }
+  
+  /* ss4 */
+  
+  #story .second-sec.ss4 {
+    margin-top: 90px;
+  }
+  #story .second-sec.ss4 .image-wrapper {
+    padding-top: 50px;
+    clear: both;
+  }
+  #story .second-sec.ss4 .image1,
+  #story .second-sec.ss4 .text1 {
+    float: left;
+  }
+  #story .second-sec.ss4 .image2,
+  #story .second-sec.ss4 .text2 {
+    float: right;
+  }
+  #story .second-sec.ss4 .text3 {
+    padding-top: 60px;
+    clear: both;
+    width: auto;
+  }
+  
+  /* .ya1-image */
+  
+  .ya1-image {
+    margin-top: 90px;
+    width: 100%;
+  }
+  
+  /* last-pic */
+  
+  .last-pic {
+    height: 616px;
+    margin-top: 90px;
+    background: url(../../../../../../../jp/showroom/papercraft/ultra/ya-1/gallery/story/img/pic_win.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #story h2 img {
+    width: 100%;
+  }
+  #story .second-sec {
+    margin-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #story .second-sec:first-of-type {
+    margin-top: 0;
+  }
+  #story .second-sec h3 {
+    margin-bottom: 30px;
+  }
+  #story .second-sec.ss4 p:last-of-type {
+    padding: 50px 0;
+  }
+  #story .second-sec .image {
+    width: 100%;
+  }
+  #story .second-sec p + .image,
+  #story .second-sec p + .image-wrapper {
+    margin-top: 45px;
+  }
+  #story .second-sec .image + .image {
+    margin-top: 25px;
+  }
+  #story .last-pic img {
+    width: 110%;
+    margin-left: -5%;
+  }
+}
+
+/* -------------------------------------------------
+  印刷用
+------------------------------------------------- */
+
+@media print {
+  .second-sec.ss2,
+  .second-sec.ss3,
+  .second-sec.ss4,
+  .last-pic {
+    page-break-before: always;
+  }
+  .last-pic {
+    background-attachment: scroll;
+  }
+}

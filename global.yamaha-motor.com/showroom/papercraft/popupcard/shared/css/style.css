@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*コンテンツエリアの下余白を詰める*/
+#rwd-content #rwd-main-content {
+    margin-bottom: 50px!important;
+}
+/*横移動用スライダー下余白を詰める*/
+#rwd-content .swiper-container {
+    padding-bottom: 0!important;
+}
+
+
+/* 画像下キャプションを左寄せ */
+#rwd-content .rwd-related-model figcaption {
+text-align: left!important;
+}
+
+/*カテゴリー帯*/
+#rwd-content .rwd-main-content-group.wide .cate_bar {
+    background: #0695d1;
+    border-bottom: solid 1px #fff;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar p{
+    float: left;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 12px 0 9px 2.34375%;
+    white-space: nowrap;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar .btn_updir{
+	float: right;
+}
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*シーン名*/
+p.rwd-text.rwd-large {
+    font-size: 2.4rem!important;
+    color: #2b88af;
+}
+/* リードコピーの行間を広げる */
+p.rwd-text.rwd-large {
+    line-height: 1.6!important;
+}
+/* カードのタイトルテキスト文字サイズ */
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dt, 
+#rwd-content .rwd-grid-cardlist03 .rwd-grid-item dt {
+    font-size: 2.0rem!important;
+}
+/* ＞付きテキストリンクの文字サイズ、太さ調整*/
+#rwd-content .rwd-link-list02 li a {
+    font-size: 1.6rem!important;
+    font-weight: bold;
+}
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*シーン名*/
+p.rwd-text.rwd-large {
+    font-size: 1.8rem!important;
+    color: #2b88af;
+    margin-bottom: 10px!important;
+}
+/*完成写真見出し下の余白を詰める*/
+h2 {
+    margin: 0 0 20px!important;
+}
+/* カードのタイトルテキスト行間指定 */
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dt, 
+#rwd-content .rwd-grid-cardlist03 .rwd-grid-item dt, 
+#rwd-content .rwd-grid-cardlist04 .rwd-grid-item dt {
+    line-height: 1.3!important;
+}
+/* カードの説明テキスト行間指定 */
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dd, 
+#rwd-content .rwd-grid-cardlist04 .rwd-grid-item dd {
+    line-height: 1.5!important;
+}
+}
+

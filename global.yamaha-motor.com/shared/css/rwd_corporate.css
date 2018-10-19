@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/*企業系サイト 共通設定 */
+
+#rwd-content .rwd-utility-nav li a:hover,
+#rwd-content .rwd-link-list05 li a:hover,
+#rwd-content .rwd-link-list06 li a:hover,
+#rwd-content .rwd-link-list07 li a:hover::before,
+#rwd-content .rwd-link-list07 li a:hover,
+#rwd-content .rwd-link-list11 li a:hover,
+#rwd-content .rwd-news-item a:hover .rwd-news-title,
+#rwd-content .rwd-grid-lineuplist02 .rwd-grid-item > a:hover p,
+#rwd-content .rwd-grid-lineuplist02 .rwd-grid-item .rwd-lineup-description .rwd-lineup-link a:hover,
+#rwd-content .rwd-main-header + .rwd-wrap-breadcrumb a:link:hover,
+#rwd-content .rwd-main-header + .rwd-wrap-breadcrumb a:visited:hover{
+  color: #0695d1;
+}
+
+/* ====================================================================================
+    # PC Layout
+====================================================================================== */
+@media print, screen and (min-width: 768px){
+
+  #rwd-content .rwd-header-category-title {
+    display: none;
+  }
+  #rwd-content .rwd-utility-nav {
+    margin-bottom: 13px;
+  }
+  #rwd-content .rwd-global-nav-wrap {
+  }
+
+    /*corporate mergein共通化 */
+    #rwd-content .rwd-global-nav-item a{
+      padding: 0;
+    }
+    #rwd-content .rwd-global-nav-item > a{
+      margin: 0 1em;
+      padding-bottom: 16px;
+      color: #44465c;
+    }
+
+
+    #rwd-content .rwd-global-subnav-item a{
+      color: #000;
+    }
+
+    #rwd-content .rwd-global-nav-item.active > span::after,
+    #rwd-content .rwd-global-nav-item.active > a::after,
+    #rwd-content .rwd-global-nav-item.current > span::after,
+    #rwd-content .rwd-global-nav-item.current > a::after,
+    #rwd-content:not(.rwd-touch-enable) .rwd-global-nav-item > span:hover::after,
+    #rwd-content:not(.rwd-touch-enable) .rwd-global-nav-item > a:hover::after {
+      position: absolute;
+      content: "";
+      left: -1em;
+      width: calc(100% + 2em);
+      height: 5px;
+      margin: auto;
+      bottom: 0;
+      /*background-color: #0089B8;*/
+      background-color: #0695d1;
+      z-index: 10;
+    }
+
+    #rwd-content .rwd-global-nav-item.active > span,
+    #rwd-content .rwd-global-nav-item.active > a,
+    #rwd-content .rwd-global-nav-item.current > span,
+    #rwd-content .rwd-global-nav-item.current > a{
+      /*color: #0089B8;*/
+      color: #0695d1;
+    }
+
+    /*#rwd-content #rwd-control-modal-bg.active{
+      margin-top: 99px;
+    }*/
+
+	#rwd-content .rwd-main-header + .rwd-wrap-breadcrumb{
+		margin-top:-30px;
+		margin-bottom:20px;
+    background-color: #fff;
+	}
+
+ #rwd-content .rwd-main-header.rwd-news-header + .rwd-wrap-breadcrumb{
+		margin-top:-60px;
+		margin-bottom:10px;
+    background-color: #fff;
+	}
+
+}
+
+
+/* ====================================================================================
+  # PC Liquid Layout
+====================================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1220px) {}
+
+@media screen and (min-width: 768px) and (max-width: 916px){}
+
+@media screen and (min-width: 768px) and (max-width: 812px){}
+
+
+/* ====================================================================================
+    SP Layout
+====================================================================================== */
+@media screen and (max-width: 767px){
+
+  /*category titleの帯をフィットさせる*/
+  #rwd-content:not(.rwd-top) .rwd-header-inner{
+    padding-bottom: 30px;
+  }
+
+  /*#rwd-content.rwd-top .rwd-main-header .rwd-global-nav{
+    margin-top: 60px;
+  }*/
+
+  #rwd-content .rwd-header-category-title{
+    color: #000;
+    background-color: #cacaca;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 59px;
+    left: 0;
+    line-height: 29px;
+    padding: 2px 0 0 5%; /*320pxの場合に左16px*/
+    box-sizing: border-box;
+  }
+
+  #rwd-content .rwd-main-header.with-keyvisual{
+    margin-bottom: 1px;
+    /*SP帯とキービジュアルの隙間をあける*/
+  }
+
+
+}

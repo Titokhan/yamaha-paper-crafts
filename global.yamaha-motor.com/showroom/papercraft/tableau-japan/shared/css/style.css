@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*コンテンツエリアの下余白を詰める*/
+#rwd-content #rwd-main-content {
+    margin-bottom: 50px!important;
+}
+/*横移動用スライダー下余白を詰める*/
+#rwd-content .swiper-container {
+    padding-bottom: 0!important;
+}
+
+/* 画像下キャプションを左寄せ */
+#rwd-content .rwd-related-model figcaption {
+text-align: left!important;
+}
+
+/*カテゴリー帯*/
+#rwd-content .rwd-main-content-group.wide .cate_bar {
+    background: #896b52;
+    border-bottom: solid 1px #fff;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar p{
+    float: left;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 12px 0 10px 2.34375%;
+    white-space: nowrap;
+}
+#rwd-content .rwd-main-content-group.wide .cate_bar .btn_updir{
+	float: right;
+}
+/*よもやま話見出し下線色変え*/
+.rwd-section-headline.rwd-border-thin {
+    border-bottom: 5px solid #dcc2a2;
+}
+h2.rwd-section-headline{
+   color: #4d251e;
+}
+/*横移動リンクの文字改行*/
+#rwd-content figcaption {
+    line-height: 1.4!important;
+}
+
+@media print, screen and (max-width: 1200px) and (min-width: 768px) {
+/* ================================================
+画面幅が768px〜1200pxの場合の表示設定
+================================================ */
+.jyokei .pc-grid8of12{
+    margin-left: 0;
+    width: 49%!important;
+}
+.jyokei .pc-grid4of12{
+    margin-left: 2%!important;
+    width: 49%!important;
+}
+[class*="rwd-border-"] {
+    padding-top: 0!important;
+}
+}
+
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/* リードコピーの行間を広げる */
+p.rwd-text.rwd-large {
+    font-size: 2.2rem;
+    line-height: 1.6!important;
+    text-align: center;
+    color: #4d251e;
+}
+/*よもやま話ブロック右側あける*/
+.block-right-pd {
+    padding-right: 2%;
+}
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/* リードコピーの行間を広げる */
+p.rwd-text.rwd-large {
+    font-size: 1.8rem;
+    line-height: 1.6!important;
+    color: #4d251e;
+}
+/*よもやま話見出しSPANのINLINE化*/
+.rwd-section-headline .rwd-subtext {
+    display: inline;
+    margin-top: 5px;
+    padding-left:10px;
+    font-size: 1.4rem;
+}
+h2 {
+    margin: 0 0 20px!important;
+}
+/*ダウンロードボタンの間余白つめ*/
+#rwd-content .rwd-button02 + .btn-caption {
+    margin-bottom: 20px!important;
+}
+
+}
+

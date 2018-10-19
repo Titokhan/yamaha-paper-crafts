@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* 基本スタイル */
+h2 {
+    margin: 0 0 30px!important;
+}
+.hd-center{
+  text-align: center;
+}
+.note{
+  font-size: 1.4rem;
+  line-height: 1.5!important;
+}
+
+/* ダウンロードボタンの色を企業サイトカラーへ */
+#rwd-content .rwd-button, 
+#rwd-content .rwd-button-default {
+  background-color: #0695d1!important;
+}
+#rwd-content .rwd-button-default:hover,
+#rwd-content .rwd-button:hover {
+  background-color: #3db3fd!important;
+}
+
+/* ダウンロードボタン下の容量記載 */
+#rwd-content .rwd-button02 + .btn-caption {
+  font-size: 1.5rem;
+  line-height: 1.5!important;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ボタン下の余白調整 */
+#rwd-content .rwd-button, #rwd-content .rwd-button-cta, #rwd-content .rwd-button-default, #rwd-content .rwd-button-link, #rwd-content .rwd-button-strip {
+  margin-bottom: 12px!important;
+}
+/* ボタン内のアイコン位置調整 */
+#rwd-content .rwd-button-default.rwd-button02.icon-download::after {
+    top: 30px!important;
+}
+
+/* 枠囲み見出し内の左余白調整 */
+.rwd-section-group-headline.rwd-border-square, 
+.rwd-section-headline.rwd-border-square {
+    padding: 15px 25px 15px 20px!important;
+}
+
+/* テーブル内：見出しの周囲余白調整 */
+#rwd-content .rwd-table th{
+    padding: 15px 10px 13px 15px!important;
+}
+
+/*左罫線付きリスト*/
+.boder_left{
+    margin-top: 1em;
+}
+.boder_left li{
+    border-left: solid 8px #b9b9b9;
+    padding-left: 12px;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+/*リスト下の余白詰め*/
+#rwd-content .rwd-notes-list-circle01 li:last-of-type {
+    margin-bottom: 1em!important;
+}
+/*横移動リンクのテキスト複数行*/
+#rwd-content .rwd-slider-carousel01 figcaption {
+    line-height: 1.4;
+}
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*カテゴリー名帯の文字下余白詰める*/
+#rwd-content .rwd-main-content-group.wide .rwd-product-header-category {
+    padding-bottom: 10px!important;
+}
+/* ダウンロードボタン下の余白を詰める */
+#rwd-content .rwd-link-list14 {
+    margin-bottom: 10px;
+}
+/* 容量情報テキストの文字サイズ調整 */
+#rwd-content .rwd-link-sub {
+    font-size: 1.5rem!important;
+    padding-left: 5px;
+}
+#rwd-content .rwd-adobe-download-image {
+    text-align: right;
+}
+/*各シリーズインデックスページのカード文字をRobotoに*/
+#rwd-content .rwd-grid-lineuplist01 .rwd-grid-item dl {
+    margin: 0 0 19px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Mark-PDF Adjustment */
+  #rwd-content .rwd-icon-text-movie, #rwd-content .rwd-icon-text-pdf {
+    font-size: 1.3rem!important;
+    padding: 4px 5px 1px!important;
+  }
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+p.rwd-text {
+    font-size: 1.5rem!important;
+    line-height: 1.6!important;
+}
+
+/* ダウンロードボタン下の余白を詰める */
+#rwd-content .rwd-link-list14 {
+    margin-bottom: 10px;
+}
+#rwd-content .rwd-table thead th, #rwd-content .rwd-table-type01 thead th, #rwd-content .rwd-table-type02 thead th, #rwd-content .rwd-table-type03 thead th {
+    font-weight: bold;
+}
+/* ボタン下の余白調整 */
+#rwd-content .rwd-button, #rwd-content .rwd-button-cta, #rwd-content .rwd-button-default, #rwd-content .rwd-button-link, #rwd-content .rwd-button-strip {
+  margin-bottom: 5px!important;
+}
+/* SP時：ボタン内テキスト複数行時の調整 */
+#rwd-content .rwd-button02 {
+    height: 92px;
+    padding: 0 27% 0 5%;
+}
+/* SP時：関連リンクボタン調整 */
+#rwd-content .rwd-button-strip.icon-arrow{
+    padding: 12px 34px 10px 15px!important;
+}
+/* SP時：関連リンクボタン内テキスト複数行時の調整 */
+#rwd-content .rwd-button05 {
+    height: 60px!important;
+}
+/* SP時枠囲み見出しの文字サイズを少し大きく */
+.rwd-section-group-headline.rwd-small span:first-child, 
+.rwd-section-headline.rwd-small span:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#rwd-content .rwd-table thead th, #rwd-content .rwd-table-type01 thead th, #rwd-content .rwd-table-type02 thead th, #rwd-content .rwd-table-type03 thead th {
+    font-weight: bold;
+}
+
+/* 容量情報テキストの文字サイズ調整 */
+#rwd-content .rwd-link-sub {
+    font-size: 1.4rem!important;
+    padding-left:5px;
+}
+/* Adobe Acrobat Reader DCバナー位置 */
+#rwd-content .rwd-adobe-download-image {
+    text-align: left;
+}
+/* Mark-PDF Adjustment */
+  #rwd-content .rwd-icon-text-movie, #rwd-content .rwd-icon-text-pdf {
+    font-weight: normal!important;
+    padding: 2px 5px!important;
+    height: 1.3rem;
+  }
+}

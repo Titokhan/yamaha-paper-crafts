@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+@media print, screen and (min-width: 1218px){
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption .sub-text {
+    font-size: 2.2rem!important;
+    line-height: 1.8!important;
+    margin-bottom: 8px!important;
+}
+
+/*メイン画像内のテキスト位置を調整*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption {
+	left: 63%!important;
+    width: 29%!important;
+    padding: 5% 4%!important;
+}
+}
+
+@media print, screen and (max-width:1217px) and (min-width: 1000px){
+/* ================================================
+画面幅が860px〜1179pxの場合の表示設定
+================================================ */
+/*メイン画像内のテキストサイズ＋行間*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption .sub-text {
+    font-size: 2.0rem!important;
+    line-height: 1.6!important;
+    margin-bottom: 8px!important;
+}
+/*メイン画像内のテキスト位置を調整*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption {
+	left: 63%!important;
+    width: 33%!important;
+    padding: 4% 2%!important;	
+}
+}
+
+@media print, screen and (max-width:999px) and (min-width: 768px){
+/* ================================================
+画面幅が768px〜859pxの場合の表示設定
+================================================ */
+/*メイン画像内のテキストサイズ＋行間*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption .sub-text {
+    font-size: 1.6rem!important;
+    line-height: 1.6!important;
+    margin-bottom: 8px!important;
+}
+/*メイン画像内のテキスト位置を調整*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption {
+	left: 63%!important;
+    width: 33%!important;
+    padding: 2% 2%!important;
+}
+}
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*メイン画像内のテキスト位置を調整*/
+#rwd-content .rwd-subpage-keyvisual-vertical figcaption .sub-text {
+font-size: 1.6rem!important;
+line-height: 1.8!important;
+}
+/*メイン画像エリア内テキストコピー部背景をグラデーションに*/
+#rwd-content .rwd-subpage-keyvisual-vertical {
+background: -moz-linear-gradient(top, rgba(247,46,80,1) 0%, rgba(126,0,22,1) 100%)!important;
+background: -webkit-gradient(left top, left bottom, color: #000;olor-stop(0%, rgba(247,46,80,1)), color-stop(100%, rgba(126,0,22,1)))!important;
+background: -webkit-linear-gradient(top, rgba(247,46,80,1) 0%, rgba(126,0,22,1) 100%)!important;
+background: linear-gradient(to bottom, rgba(247,46,80,1) 0%, rgba(126,0,22,1) 100%)!important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f72e50', endColorstr='#7e0016', GradientType=0 );
+}
+
+}

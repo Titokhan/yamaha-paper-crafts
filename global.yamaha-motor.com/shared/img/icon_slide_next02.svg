@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3e495c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_slide_next02.svg" class="cls-1" d="M318,502l-9.74-10-1.267,1.3,8.474,8.7-8.474,8.7,1.267,1.3Z" transform="translate(-307 -492)"/>
+</svg>

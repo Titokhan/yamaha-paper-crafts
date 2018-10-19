@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* -------------------------------------------------
+  gallery
+------------------------------------------------- */
+
+#gallery .items .item a {
+  outline: none;
+}
+#gallery .items .item img {
+  width: 100%;
+  outline: none;
+}
+
+@media print, screen and (min-width: 768px){
+  #gallery .two-col {
+    display: flex;
+  }
+  #gallery .two-col .title-block {
+    width: 19.3%;
+    background-color: #534748;
+  }
+  #gallery .two-col .title-block img {
+    width: 48.74%;
+    margin: 24px 0 0 40.5%;
+  }
+  #gallery .two-col .item-block {
+    width: 80.7%;
+    background-color: #666;
+  }
+  #gallery .items {
+    width: 90.48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-left: solid 1px #666;
+    border-top: solid 1px #666;
+  }
+  #gallery .items .item {
+    width: 50%;
+    box-sizing: border-box;
+    border-right: solid 1px #666;
+    border-bottom: solid 1px #666;
+    position: relative;
+  }
+  #gallery .items .num {
+    width: 50px;
+    padding-top: 7px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 3.0rem;
+    font-family: 'Roboto';
+    border-top: solid 8px #fff;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+  }
+  #gallery .items .indicator {
+    display: none;
+  }
+  
+  #gallery .items .item a {
+    position: relative;
+    z-index: 5;
+    display: block;
+  }
+  #gallery .items .item a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5) url(../../../../../../../jp/showroom/papercraft/ultra/ya-1/gallery/detail/img/icon_zoom.svg) no-repeat center center;
+    background-size: 21.88% auto;
+    opacity: 0;
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+  }
+  #gallery .items .item a:hover::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #gallery {
+    padding: 0 0 36px;
+    background: url(../../../../../../../jp/showroom/papercraft/ultra/ya-1/gallery/detail/img/bg.png) repeat-y 0 0;
+    background-size: 100% auto;
+  }
+  #gallery .title-block img {
+    width: 31.2%;
+    max-width: 236px;
+    margin: 18px 0 15px 13px;
+  }
+  #gallery .items img {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.3);
+  }
+  #gallery .items .num {
+    height: 22px;
+    padding: 6px 0 0 9px;
+    margin: 16px 0 7px 16px;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Roboto';
+    float: left;
+    color: #fff;
+    border-left: solid 2px #fff;
+  }
+  #gallery .items .indicator {
+    margin: 20px 18px 0 0;
+    text-align: right;
+    display: block;
+    float: right;
+  }
+  #gallery .items .indicator span {
+    width: 1px;
+    height: 14px;
+    margin: 5px 0 0 3px;
+    display: inline-block;
+    background-color: #fff;
+  }
+  #gallery .items .indicator span.current {
+    margin-top: 0;
+    height: 19px;
+    background-color: #f6d9b8;
+  }
+  
+  #gallery a.rwd-modal-link {
+    cursor: default;
+  }
+}

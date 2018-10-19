@@ -1,0 +1,39 @@
+#ContentsArea {
+	font-size: 14px;
+}
+#ContentsArea .info {
+	margin: 20px 0 28px ;
+	padding: 10px;
+	color: #131699;
+	text-align: center;
+	font-size: 108%;
+	border: 5px solid #131699;
+}
+#ContentsArea .wrap {
+	position: relative;
+	margin: 26px 0 38px;
+	padding-top: 20px;
+	border-top: 2px solid #c8c9e0;
+}
+#ContentsArea .wrap h2 {
+	margin: 0 6px 12px;
+	font-size: 14px;
+}
+#ContentsArea .wrap h2 span.number {
+	display: inline-block;
+	width: 8.6em;
+	font-weight: normal;
+}
+#ContentsArea .wrap h2 span + span {
+	width: auto;
+	font-size: 16px;
+	font-weight: bold;
+}
+#ContentsArea .wrap p {
+	margin: 0 6px 16px;
+	padding-left: 9em;
+	color: #fb0000;
+}
+#ContentsArea .wrap img {
+	display: block;
+}

@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*メイン画像タイトル部文字調整*/
+#rwd-content .rwd-keyvisual-caption-title-en {
+    font-size: 2.0rem!important;
+    line-height: 1.5!important;
+}
+
+/*カードのタイトル部*/
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dt {
+    font-size: 2.0rem!important;
+}
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dd {
+    line-height: 1.5;
+}
+/*カードの文字部padding*/
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dl {
+    padding: 19px 18px 28px 18px!important;
+}
+/*ページ下バナー*/
+.banner {
+    margin: 40px auto 80px;
+    width: 664px;
+}
+.banner a {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 660px;
+    height: 101px;
+    overflow: hidden;
+    border: 2px solid #6c9ae7;
+    -moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+.banner a:hover {
+top: 1px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.banner span {
+    display: block;
+}
+.banner a:hover span {
+    position: absolute;
+    top: 0;
+}
+.banner span.caution {
+    text-align: center;
+    line-height: 1.5!important;
+}
+/*注意事項の行間*/
+.note{
+    line-height: 1.5!important;
+}
+}
+
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*カードのタイトル部行間*/
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dt, #rwd-content .rwd-grid-cardlist03 .rwd-grid-item dt, #rwd-content .rwd-grid-cardlist04 .rwd-grid-item dt {
+    line-height: 1.4!important;
+}
+#rwd-content .rwd-grid-cardlist01 .rwd-grid-item dd{
+    line-height: 1.5!important;
+}
+/*ページ下バナー*/
+.banner {
+    margin: 30px auto 5px auto;
+    width: 90%;
+}
+.banner a img{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid #6c9ae7;
+    -moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+.banner a:hover img {
+top: 1px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.banner span {
+    display: none;
+}
+.wd90{
+    width: 90%!important;
+    margin: 0 auto;
+}
+
+}

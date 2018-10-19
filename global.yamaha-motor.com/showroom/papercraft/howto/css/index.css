@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+@media print, screen and (min-width: 768px){
+/* ================================================
+画面幅が768px以上の場合の表示設定
+================================================ */
+/*メイン画像下リード文*/
+.lets {
+  margin: 0 0 20px!important;
+  font-size: 2.8rem!important;
+  color: #001f32;
+  line-height: 1.2;
+}
+}
+
+@media print, screen and (max-width: 767px){
+/* ================================================
+画面幅が768px未満の場合の表示設定
+================================================ */
+/*メイン画像下リード文*/
+.lets {
+  margin: 0 0 20px!important;
+  font-size: 1.8rem!important;
+  line-height: 1.5;
+}
+}
+
+/* ================================================
+pdf-area
+================================================ */
+
+#rwd-content .pdf-area .pdf-lead {
+  font-size: 2.0rem;
+  text-align: center;
+}
+#rwd-content .pdf-area .pdf-lead a {
+  color: #1b2971;
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-decoration: none !important;
+}
+#rwd-content .pdf-area .pdf-lead a:hover {
+  text-decoration: underline !important;
+}
+
+#rwd-content .pdf-area .texts .normal {
+  margin-top: 5px;
+  padding: 0 0 0 15px;
+  border-left: solid 7px #ffe1b5;
+  line-height: 1.5;
+}
+
+@media print, screen and (max-width: 767px){
+  #rwd-content .pdf-area .pdf-lead {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  #rwd-content .pdf-area .pdf-lead a {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================================================
+type-under-section
+================================================ */
+
+#rwd-content .type-under-section .cont {
+  padding-bottom: 40px;
+  position: relative
+}
+#rwd-content .type-under-section .cont + .cont {
+  margin-top: 12px;
+}
+#rwd-content .type-under-section .cont .layout-table {
+  width: 97%;
+  display: table;
+  border-collapse: collapse;
+}
+#rwd-content .type-under-section .cont .layout-table .cell {
+  display: table-cell;
+  vertical-align: top;
+}
+#rwd-content .type-under-section .cont .layout-table .cell:last-child {
+  width: 31.5%;
+  padding-top: 40px;
+}
+#rwd-content .type-under-section .cont .kotsu {
+  height: 112px;
+  width: 112px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 3%;
+  top: 0;
+  background-color: #f90;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#rwd-content .type-under-section .cont .kotsu .num {
+  font-size: 2.9rem;
+}
+#rwd-content .type-under-section .cont .image-and-text {
+  width: 65%;
+  margin-left: 25%;
+}
+#rwd-content .type-under-section .cont .image-and-text .image {
+  width: 90%;
+  margin: 0 auto 15px;
+}
+#rwd-content .type-under-section#cont3 .cont:nth-of-type(1) .image-and-text .image {
+  padding-top: 12px;
+}
+#rwd-content .type-under-section#cont3 .cont:nth-of-type(2) .image-and-text .image {
+  padding-top: 33px;
+}
+#rwd-content .type-under-section#cont4 .cont:nth-of-type(1) .image-and-text .image {
+  padding-top: 12px;
+}
+#rwd-content .type-under-section#cont4 .cont:nth-of-type(2) .image-and-text .image {
+  padding-top: 5px;
+}
+#rwd-content .type-under-section#cont4 .cont:nth-of-type(3) .image-and-text .image {
+  padding-top: 12px;
+}
+#rwd-content .type-under-section#cont4 .cont:nth-of-type(4) .image-and-text .image {
+  padding-top: 29px;
+}
+#rwd-content .type-under-section .cont .image-and-text p {
+  line-height: 1.5;
+}
+
+@media print, screen and (max-width: 767px){
+  #rwd-content .type-under-section {
+    margin-bottom: 20px;
+  }
+  #rwd-content .type-under-section .cont .layout-table {
+    width: auto;
+    display: block;
+  }
+  #rwd-content .type-under-section .cont .layout-table .cell {
+    display: block;
+    vertical-align: middle;
+  }
+  #rwd-content .type-under-section .cont .layout-table .cell:last-child {
+    width: auto;
+    padding-top: 80px;
+  }
+  #rwd-content .type-under-section .cont .kotsu-wrapper {
+    margin-bottom: 1px;
+    background-color: #ebe9e9;
+  }
+  #rwd-content .type-under-section .cont .kotsu {
+    height: 36px;
+    width: 69px;
+    padding-top: 0px;
+    font-size: 1.7rem;
+    position: relative;
+    left: 0;
+    border-right: solid 1px #fff;
+    line-height: 38px;
+  }
+  #rwd-content .type-under-section .cont .kotsu .num {
+    font-size: 2.2rem;
+    line-height: 38px;
+  }
+  #rwd-content .type-under-section .cont .image-and-text {
+    width: auto;
+    margin-left: 0;
+  }
+  #rwd-content .type-under-section .cont .image-and-text .image {
+    width: 100%;
+    margin: 0 auto 23px;
+  }
+}
+
+/* ================================================
+outro1
+================================================ */
+
+#rwd-content .outro1 {
+  padding-top: 30px;
+}
+#rwd-content .outro1 .layout-table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#rwd-content .outro1 .layout-table .cell {
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#rwd-content .outro1 .layout-table .cell:first-child {
+  padding-right: 2%;
+}
+#rwd-content .outro1 .layout-table .cell:first-child p {
+  font-size: 1.8rem;
+}
+#rwd-content .outro1 .layout-table .cell:last-child {
+  width: 40%;
+}
+
+@media print, screen and (max-width: 767px){
+  #rwd-content .outro1 {
+    padding-top: 0px;
+  }
+  #rwd-content .outro1 .layout-table {
+    display: block;
+  }
+  #rwd-content .outro1 .layout-table .cell {
+    display: block;
+  }
+  #rwd-content .outro1 .layout-table .cell:first-child {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  #rwd-content .outro1 .layout-table .cell:first-child p {
+    font-size: 1.5rem;
+  }
+  #rwd-content .outro1 .layout-table .cell:last-child {
+    width: auto;
+  }
+}
